@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    /* put the colors in CSS variables */
+    --ttmagenta: rgba(238, 29, 82, 0.8);
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+h1{
+    font-family: "Boogaloo";
+    font-size: 48px;
+}
+button#continue {
+    background-color: var(--ttmagenta);
+    color: white;
+    font-family: sans-serif;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+div.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 325px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: var(--ttmagenta);
+}
+
+div#nickname{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+}
+blockquote {
+    border-style: solid;
+    border-color: var(--ttmagenta);
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: var(--ttmagenta);
+}
+
+#bot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#bot_left{
+    width: 18%;
+}
+
+#bot_center{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#reload{
+    color: var(--ttmagenta);
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+}
+
+#reloadIcon{
+    height: 50px;
+    width: 50px;
+}
+#bot_right{
+    width: 18%;
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+}
+#continue{
+    font-size: 20px;
+}
+iframe {
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+@media screen and (max-width: 900px) {
+    #bot {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #bot_left {
+        display: none;
+    }
+}

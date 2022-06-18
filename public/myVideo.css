@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --magenta: rgba(238, 29, 82, 0.9);
+    --cyan: rgb(105, 201, 208);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    /* height: 100vh; */
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%
+}
+
+div.headerRight {
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+div.headerLeft {
+    width: 18%;
+}
+
+div.headerCenter {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h1#header{
+    font-family: "Boogaloo";
+    font-size: 48px;
+}
+
+button.mainButtons {
+    border-radius: 10px;
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    background-color: var(--magenta);
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+    margin: 10px;
+}
+
+h2{
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+}
+#bars{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-width: 800px;
+    width: 70%;
+    /* max-width: 1200px; */
+}
+
+#left_bars{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+#right_bars {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 100%;
+    height: 100px;
+    /* margin: 15px; */
+}
+
+.barContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-indent: 15px;
+    width: 80%;
+    height: 45px;
+    border: 2px dashed gray;
+    border-radius: 10px;
+    /* text-align: center; */
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+
+button.delete{
+    font-family: "Boogaloo";
+    background-color: transparent;
+    color: var(--magenta);
+    font-size: 64px;
+    width: 70px;
+    height: 64px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+    #bars{
+        flex-direction: column;
+        align-items: center;
+        min-width: none;
+    }
+    #right_bars{
+        width: 80%;
+        max-width: 500px;
+    }
+    #left_bars{
+        width: 80%;
+        max-width: 500px;
+    }
+    #play{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #bars {
+        flex-direction: column;
+        align-items: center;
+        min-width: none;
+    }
+        #right_bars {
+            width: 70%;
+            max-width: 400px;
+        }
+        
+        #left_bars {
+            width: 70%;
+            max-width: 400px;
+        }
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    div.headerRight {
+        width: 30%;
+        justify-content: center;
+    }
+
+    div.headerLeft {
+        display: none;
+    }
+
+    div.headerCenter {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button.mainButtons{
+        font-size: 16px;
+    }
+
+    button.delete{
+        font-size: 44px;
+    }
+}
+
+/* #play{
+  color: blue;
+} */

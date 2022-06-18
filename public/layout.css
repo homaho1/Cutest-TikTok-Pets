@@ -1,0 +1,145 @@
+/* confirmed with Arunpreet Sandhu (TA for Monday 04/18) */
+
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;600&display=swap');
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Inter;
+}
+#big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 450px;
+}
+
+#top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#header {
+    font-family: Boogaloo;
+    font-size: 48px;
+}
+
+#myVids {
+    position: absolute;
+    right: 5vw;
+    font-family: Inter, Bold;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(238,29,82,0.9);
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 450px;
+    background-image: linear-gradient(100deg, rgba(238, 29, 82, 0.9), rgba(105,201,208,1));
+    border-radius: 25px;
+    margin-bottom: 40px;
+}
+
+h3{
+    font-family: Inter, Bold;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+#textbooks{
+    width: 350px;
+}
+label{
+    font-size: 16px;
+    color: white;
+}
+.resBox{
+    width: 350px;
+    height: 50px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-indent: 1rem;
+}
+
+#continue {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Inter,Bold;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(238, 29, 82, 0.9);
+    height: 50px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+#subButton{
+    background-color: transparent;
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    #top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #myVids {
+        position: relative;
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #big{
+        width: 350px;
+    }
+
+    #header {
+        font-size: 32px;
+    }
+
+    #myVids{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 20px;
+    }
+
+    #middle {
+        height: 400px;
+        margin-bottom: 70px;
+    }
+    #textbooks {
+        width: 300px;
+    
+    }
+    .resBox {
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+    }
+    #continue {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,16 @@
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+* {	
+  vertical-align: baseline;
+	font-family: inherit;
+  font-weight: inherit;
+	font-size: 100%;
+  font-style: inherit;
+	padding: 0;
+  outline: 0;
+  border: 0 none;
+	margin: 0;
+	}
